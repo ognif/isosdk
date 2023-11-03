@@ -10,5 +10,14 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
 | - DVD-ROM, DVD-RW, DVD-R, DVD+RW, DVD+R, DVD-RAM    | - e-SATA |
 | - CD-ROM, CD-R, CD-RW                               | |
 
-| Supported Media | Device Interfaces |
+
+| Device Control | Blu-ray |
 | :--- | :--- |
+| Device Enumeration | BD-R Sequential Recording (BD-R – POW)
+| Device Capabilities | BD-R Pseudo-Overwrite (BD-R + POW)
+| Device Cache Information | BD-RE Random Recording
+| Lock / Unlock Tray |
+| Read / Write Speed Control |
+| Media Information |
+
+

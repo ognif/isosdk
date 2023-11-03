@@ -8,3 +8,13 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
 - DVD+R DL and DVD-R DL Dual Layer
 - DVD-ROM, DVD-RW, DVD-R, DVD+RW, DVD+R, DVD-RAM
 - CD-ROM, CD-R, CD-RW
+
+| Supported Media | Device Interfaces |
+| --- | --- |
+| - M-Disc                                            | - EIDE |
+| - BD-R XL and BD-RE XL                              | - USB (C) |
+| - BD-R and BD-RE                                    | - FireWire (IEEE-1394) |
+| - BD-R DL and BD-RE DL Dual Layer                   | - Thunderbolt |
+| - DVD+R DL and DVD-R DL Dual Layer                  | - SATA |
+| - DVD-ROM, DVD-RW, DVD-R, DVD+RW, DVD+R, DVD-RAM    | - e-SATA |
+| - CD-ROM, CD-R, CD-RW                               | |

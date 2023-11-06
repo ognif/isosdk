@@ -1,0 +1,67 @@
+To burn a AudioCD from compressed audio files you can use 
+the bass library (https://www.un4seen.com)
+
+bass = The basic bass library
+bassmix = The addon to burn mono or multichannel files to audio cd
+Plugins- Load them with the Plugins api the Foxburner SDK use.
+
+################################################################
+###### Decoding (Burn Audio CD) ################################
+################################################################
+
+## Windows ##
+- bass.dll (https://www.un4seen.com/download.php?bass24)
+- bassmix.dll (https://www.un4seen.com/download.php?bassmix24)
+## Windows Plugins ##
+- Ape/Monkey (https://www.un4seen.com/download.php?z/2/bass_ape24) 
+- AAC (https://www.un4seen.com/download.php?z/2/bass_aac24)
+- Ac3 (https://www.un4seen.com/download.php?z/2/bass_ac324)
+- WavePack (https://www.un4seen.com/download.php?basswv24)
+- Flac (https://www.un4seen.com/download.php?bassflac24)
+- Opus (https://www.un4seen.com/download.php?bassopus24)
+- Webm (https://www.un4seen.com/download.php?basswebm24)
+- Wma (https://www.un4seen.com/download.php?basswm24)
+
+## Windows Tags ##
+- https://www.un4seen.com/download.php?z/3/tags18
+
+################################################################
+
+If you want to use the bass libs, you can download them and create a temporary
+Path to them:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/your/path/to/bass/"
+NOTE:
+This is a one line and only works one time. You have to call the sample with
+commandline, not with the UI. For long term usage check:
+https://unix.stackexchange.com/questions/46614/how-to-export-ld-library-path-to-all-users-and-system-services
+
+## Linux ##
+- libbass.so (https://www.un4seen.com/download.php?bass24-linux)
+- libbassmix.so (https://www.un4seen.com/download.php?bassmix24-linux)
+## Linux Plugins ##
+- Ape/Monkey (https://www.un4seen.com/download.php?z/2/bass_ape24-linux) 
+- AAC (https://www.un4seen.com/download.php?z/2/bass_aac24-linux)
+- Ac3 (https://www.un4seen.com/download.php?z/2/bass_ac324-linux)
+- WavePack (https://www.un4seen.com/download.php?basswv24-linux)
+- Flac (https://www.un4seen.com/download.php?bassflac24-linux)
+- Opus (https://www.un4seen.com/download.php?bassopus24-linux)
+- Webm (https://www.un4seen.com/download.php?basswebm24-linux)
+
+## Linux Tags ##
+- https://www.un4seen.com/download.php?z/3/tags18-linux
+
+################################################################
+
+## Mac ##
+- libbass.dylib (https://www.un4seen.com/download.php?bass24-osx)
+- libbassmix.dylib (https://www.un4seen.com/download.php?bassmix24-osx)
+## Mac Plugins ##
+- Ape/Monkey (https://www.un4seen.com/download.php?z/2/bass_ape24-osx) 
+- Ac3 (https://www.un4seen.com/download.php?z/2/bass_ac324-osx)
+- WavePack (https://www.un4seen.com/download.php?basswv24-osx)
+- Flac (https://www.un4seen.com/download.php?bassflac24-osx)
+- Opus (https://www.un4seen.com/download.php?bassopus24-osx)
+- Webm (https://www.un4seen.com/download.php?basswebm24-osx)
+
+## Mac Tags ##
+- https://www.un4seen.com/download.php?z/3/tags18-osx

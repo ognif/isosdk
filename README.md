@@ -2,7 +2,7 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
 
 ||
 | :--- |
-| # Supported Media |
+| \# Supported Media |
 
 | Supported Media | 
 | :--- |

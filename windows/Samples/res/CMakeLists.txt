@@ -1,0 +1,37 @@
+if(WIN32)
+	set(ICON_FILES
+		addfile.ico
+		addfolder.ico
+		addvideo.ico
+		audio.ico
+		burn_iso.ico
+		cancel.ico
+		cd_eject.ico
+		cd_erase.ico
+		cd_info.ico
+		cd_load.ico
+		closed_folder.ico
+		delvideo.ico
+		drive_info.ico
+		drive_scan.ico
+		isosdk.ico
+		isosdkbigbig.ico
+		isosdksmall.ico
+		iso.ico
+		mfc.ico
+		minidoc.gif
+		minidoc.ico
+		open_folder.ico
+		play.ico
+		refresh2.ico
+		reset.ico
+		selection.ico
+		stop.ico
+	)
+elseif(APPLE)
+	set(ICON_FILES
+		isosdk.icns
+	)
+endif(WIN32)
+
+install(FILES ${ICON_FILES} DESTINATION ${BASE_SAMPLES_DIR}/res COMPONENT IsoSDK)

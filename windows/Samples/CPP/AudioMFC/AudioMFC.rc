@@ -1,0 +1,387 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russisch (Russische Föderation) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CDTEXT DIALOGEX 0, 0, 216, 153
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ARRANGER,61,7,149,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPOSER,61,23,149,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SONGWRITER,61,39,149,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PERFORMER,61,55,149,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MESSAGE,61,71,149,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TITLE,61,87,149,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DISCCODE,61,103,149,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PAUSE,61,119,149,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Pause in frames",IDC_CHECK_PAUSE_IN_FRAMES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,61,135,149,14
+    LTEXT           "Arranger:",IDC_STATIC,7,10,48,8
+    LTEXT           "Composer:",IDC_STATIC,7,26,48,8
+    LTEXT           "Title:",IDC_STATIC,7,90,48,8
+    LTEXT           "Message:",IDC_STATIC,7,74,48,8
+    LTEXT           "Performer:",IDC_STATIC,7,58,48,8
+    LTEXT           "Song writer:",IDC_STATIC,7,42,48,8
+    LTEXT           "Code:",IDC_DISCCODE,7,106,48,8
+    LTEXT           "Pause (sec)",IDC_STATIC,7,122,38,8
+END
+
+IDD_INDEXES DIALOGEX 0, 0, 216, 153
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_INDEXES,3,3,69,129,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "M:",IDC_STATIC,77,5,9,8
+    LTEXT           "S:",IDC_STATIC,119,5,8,8
+    LTEXT           "F:",IDC_STATIC,161,5,8,8
+    EDITTEXT        IDC_IDX_MIN,87,3,29,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,105,3,10,14
+    EDITTEXT        IDC_IDX_SEC,127,3,29,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_SEC,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,145,3,11,14
+    EDITTEXT        IDC_IDX_FRAME,170,3,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_FRAME,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,188,3,11,14
+    PUSHBUTTON      "Add",IDC_IDX_ADD,129,22,44,14
+    PUSHBUTTON      "Delete",IDC_IDX_DELETE,78,22,44,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CDTEXT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 186
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_INDEXES, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 137
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CDTEXT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Russisch (Russische Föderation) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AUDIOMFC DIALOGEX 0, 0, 421, 295
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+MENU IDR_AUDIOMFC
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TABS,"SysTabControl32",0x0,4,41,413,232
+    COMBOBOX        IDC_DEVICES,58,7,232,94,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Devices:",IDC_STATIC,7,7,41,12,SS_CENTERIMAGE
+    LTEXT           "Project type:",IDC_STATIC,7,22,49,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_PROJECTTYPE,58,22,121,53,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Static",IDC_SIZE_DUMMY,4,275,413,14
+    CONTROL         "",IDC_FILELIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,10,58,397,210
+    CONTROL         "",IDC_TRACKLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,58,397,210
+END
+
+IDD_PROPERTIES DIALOGEX 0, 0, 221, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Disk CDText"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,104,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,170,50,14
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,0,0,221,167
+END
+
+IDD_SAMPLE_BURN_DIALOG DIALOGEX 0, 0, 287, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "32% written to D: [DiskLabel]"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,230,157,50,14
+    LISTBOX         IDC_BURN_LOG,7,7,273,71,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Write File:",IDC_STATIC,7,80,33,10
+    LTEXT           "",IDC_CURRENT_FILE,45,80,154,10
+    LTEXT           "Current speed:",IDC_CURRENT_SPEED,7,90,94,10
+    LTEXT           "Total time:",IDC_TOTAL_TIME,201,80,79,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,101,271,1
+    LTEXT           "Current buffer:",IDC_STATIC,7,104,93,9
+    LTEXT           "Total progress:",IDC_STATIC,7,127,93,10
+    CONTROL         "",IDC_PROGRESS_BUFFER,"msctls_progress32",WS_BORDER,7,114,251,11
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,7,137,251,11
+    PUSHBUTTON      "Save log",IDC_SAVE_LOG,7,157,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_AUDIOMFC, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 417
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_PROPERTIES, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_SAMPLE_BURN_DIALOG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\..\\res\\isosdk.ico"
+
+IDI_PLAY                ICON                    "..\\..\\res\\play.ico"
+
+IDI_STOP                ICON                    "..\\..\\res\\stop.ico"
+
+IDI_PLUSFILE            ICON                    "..\\..\\res\\audio.ico"
+
+IDI_MINUS               ICON                    "..\\..\\res\\selection.ico"
+
+IDI_CANCEL              ICON                    "..\\..\\res\\cancel.ico"
+
+IDI_BURN                ICON                    "..\\..\\res\\burn_iso.ico"
+
+IDI_ERASE               ICON                    "..\\..\\res\\cd_erase.ico"
+
+IDI_RESET               ICON                    "..\\..\\res\\reset.ico"
+
+IDI_CLOSED_FOLDER       ICON                    "..\\..\\res\\closed_folder.ico"
+
+IDI_OPENED_FOLDER       ICON                    "..\\..\\res\\open_folder.ico"
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AudioMFC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_AUDIOMFC MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        POPUP "Audio"
+        BEGIN
+            MENUITEM "Add audio file",              ID_AUDIO_ADDAUDIOFILE
+            MENUITEM "Delete selected",             ID_AUDIO_DELETESELECTED
+            MENUITEM "Reset",                       ID_AUDIO_RESET
+        END
+        POPUP "Data", GRAYED
+        BEGIN
+            MENUITEM "Add file",                    ID_DATA_ADDFILE
+            MENUITEM "Add folder",                  ID_DATA_ADDFOLDER
+            MENUITEM "Create folder",               ID_DATA_CREATEFOLDER
+            MENUITEM "Delete selected",             ID_DATA_DELETESELECTED
+            MENUITEM "Reset",                       ID_DATA_RESET
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Write log file",              ID_FILE_LOGFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Burn"
+    BEGIN
+        MENUITEM "Burn with custom dialog...",  ID_BURN_BURNWITHDEVELOPEDGUI
+        MENUITEM "Burn with IsoSDK embedded dialog", ID_BURN_BURNWITHFOXBURNEREMBEDDEDDIALOG
+        MENUITEM "Erase disk",                  ID_BURN_ERASEDISK
+        MENUITEM SEPARATOR
+        POPUP "Options"
+        BEGIN
+            MENUITEM "Eject disk",                  ID_OPTIONS_EJECTDISK, CHECKED
+            MENUITEM "Verify after burn",           ID_OPTIONS_VERIFYAFTERBURN, GRAYED
+            MENUITEM "Joliet file system",          ID_OPTIONS_JOLIETFILESYSTEM, GRAYED
+            MENUITEM "Rock Ridge file system",      ID_OPTIONS_ROCKRIDGEFILESYSTEM, GRAYED
+            MENUITEM "Finalize",                    ID_OPTIONS_FINALIZE, CHECKED, GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "Allow lowercase names",       ID_OPTIONS_ALLOW_LOWERCASE_NAMES
+            MENUITEM "Allow many directories",      ID_OPTIONS_ALLOW_MANY_DIRECTORIES
+            POPUP "ISO level"
+            BEGIN
+                MENUITEM "Level 1",                     ID_ISO_LEVEL_1
+                MENUITEM "Level 2",                     ID_ISO_LEVEL_2
+                MENUITEM "Level 3",                     ID_ISO_LEVEL_3
+                MENUITEM "Romeo",                       ID_ISO_LEVEL_ROMEO
+            END
+        END
+    END
+    POPUP "Audio"
+    BEGIN
+        MENUITEM "Play selected",               ID_AUDIO_PLAYSELECTED
+        MENUITEM "Stop playback",               ID_AUDIO_STOPPLAYBACK
+        MENUITEM "Load Bass APE plugin",        ID_AUDIO_LOADBASSPLUGIN
+        MENUITEM "Load Bass WMA plugin",        ID_AUDIO_LOADBASSWMAPLUGIN
+        MENUITEM SEPARATOR
+        MENUITEM "CD text",                     ID_AUDIO_CDTEXT
+        MENUITEM "Track CD  text",              ID_AUDIO_TRACKCDTEXT
+        MENUITEM "Write CD Text in unicode",    ID_WRITE_UNICODE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Get audio file size (on disk)", ID_AUDIO_GETAUDIOFILESIZE
+        MENUITEM "Get disk size",               ID_AUDIO_GETDISKSIZE
+    END
+    POPUP "ASPI / SPTI"
+    BEGIN
+        POPUP "Interface"
+        BEGIN
+            MENUITEM "Internal",                    ID_INTERFACE_INTERNAL
+            MENUITEM "Winaspi",                     ID_INTERFACE_WINASPI
+            MENUITEM "FrogAspi",                    ID_INTERFACE_FROGASPI
+        END
+        MENUITEM "Rescan devices",              ID_ASPI_RESCANDEVICES
+        MENUITEM "Burn devices only",           ID_ASPI_BURNDEVICESONLY
+        MENUITEM "Disable imagewirter",         ID_ASPI_DISABLEIMAGEWIRTER
+    END
+    POPUP "Information"
+    BEGIN
+        MENUITEM "About",                       ID_INFORMATION_ABOUT
+        MENUITEM "Web",                         ID_INFORMATION_WEB
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_AUDIOMFC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SAMPLE_BURN_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\AudioMFC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

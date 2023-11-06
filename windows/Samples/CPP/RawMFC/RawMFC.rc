@@ -1,0 +1,278 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\RawMFC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\..\\res\\isosdk.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RAWWRITER_DIALOG DIALOGEX 0, 0, 436, 293
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Add File",IDC_STATIC,7,38,422,39
+    PUSHBUTTON      "...",IDC_SELFILE,338,52,17,12
+    PUSHBUTTON      "Analyze",IDC_ANALIZEBUTTON,360,52,55,12,BS_MULTILINE
+    GROUPBOX        "Track Settings",IDC_STATIC,7,80,422,123
+    LTEXT           "Track number:",IDC_STATIC,14,97,49,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_TRACKNUMBER,68,97,31,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Datatype Mask:",IDC_STATIC,14,111,49,12,SS_CENTERIMAGE
+    LTEXT           "Track mode:",IDC_STATIC,242,97,49,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_TRACKMODE,291,97,101,77,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ignore Mask:",IDC_STATIC,242,111,49,12,SS_CENTERIMAGE
+    LTEXT           "Start Adress:",IDC_STATIC,14,158,46,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_STARTADRESS,68,158,63,12,ES_AUTOHSCROLL
+    LTEXT           "Track Length:",IDC_STATIC,14,172,49,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_TRACKLENGTH,68,172,63,12,ES_AUTOHSCROLL
+    LTEXT           "Offset:",IDC_STATIC,14,186,41,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_OFFSET,68,186,63,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add Track",IDC_ADDTRACK,248,186,56,16
+    CONTROL         "",IDC_TRACKITEMS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,208,422,64
+    LTEXT           "(sectors)",IDC_STATIC,135,158,30,12,SS_CENTERIMAGE
+    LTEXT           "(sectors)",IDC_STATIC,135,172,30,11,SS_CENTERIMAGE
+    LTEXT           "(bytes)",IDC_STATIC,135,186,30,12,SS_CENTERIMAGE
+    GROUPBOX        "Devices",IDC_STATIC,7,3,422,32
+    COMBOBOX        IDC_CMBBX_DRIVES,13,15,321,149,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Index:",IDC_STATIC,125,98,25,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_TRACKINDEX,147,97,21,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN_INDEX,"msctls_updown32",UDS_ARROWKEYS,173,97,18,11
+    CONTROL         "",IDC_SPIN_TRACK,"msctls_updown32",UDS_ARROWKEYS,101,97,18,11
+    LTEXT           "0 - pregap; 1 - track",IDC_STATIC,126,84,65,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ADDFILE,14,52,320,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Reset Track",IDC_RESETTRACK,310,186,56,16
+    PUSHBUTTON      "Delete Track",IDC_DELETETRACK,372,186,56,16
+    CONTROL         "",IDC_LISTDATAMASK,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,68,116,123,38
+    CONTROL         "",IDC_LISTIGNOREMASK,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,291,116,123,38
+END
+
+IDD_SAMPLE_BURN_DIALOG DIALOGEX 0, 0, 287, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "32% written to D: [DiscLabel]"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save Log",IDC_SAVE_LOG,7,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,230,157,50,14
+    CONTROL         "",IDC_PROGRESS_BUFFER,"msctls_progress32",WS_BORDER,7,114,251,11
+    LTEXT           "Current Buffer:",IDC_STATIC,7,103,99,10,SS_CENTERIMAGE
+    LTEXT           "Write File:",IDC_STATIC,7,80,44,8,SS_CENTERIMAGE
+    LTEXT           "", IDC_CURRENT_FILE, 45, 80, 154, 10
+    LTEXT           "Current Speed:",IDC_CURRENT_SPEED,7,89,86,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,7,137,251,11
+    LTEXT           "Total Progress:",IDC_STATIC,7,126,99,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,101,270,1
+    LTEXT           "Total Time:",IDC_TOTAL_TIME,201,80,79,10,SS_CENTERIMAGE
+    LISTBOX         IDC_BURN_LOG,7,7,273,71,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_RAWWRITER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        VERTGUIDE, 14
+        VERTGUIDE, 68
+        VERTGUIDE, 135
+        VERTGUIDE, 191
+        VERTGUIDE, 291
+        VERTGUIDE, 334
+        VERTGUIDE, 360
+        VERTGUIDE, 415
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+        HORZGUIDE, 116
+        HORZGUIDE, 142
+    END
+
+    IDD_BURN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        VERTGUIDE, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Add File",                    ID_FILE_ADDFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Write log file",              ID_FILE_WRITELOGFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Tracks"
+    BEGIN
+        MENUITEM "Try to Analyze File",         ID_FILE_TRYTOANALYZEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Add Track",                   ID_TRACKS_ADDTRACK
+        MENUITEM "Reset Tracklist",             ID_TRACKS_RESETTRACKLIST
+    END
+    POPUP "Burn"
+    BEGIN
+        MENUITEM "Burn with custom dialog...",  ID_FUNCTIONS_BURNDISC
+        MENUITEM "Burn with IsoSDK Embedded Dialog", ID_BURN_BURNWITHFOXBURNEREMBEDDEDDIALOG
+        MENUITEM "Erase Disc",                  ID_BURN_ERASEDISK
+        MENUITEM SEPARATOR
+        POPUP "Options"
+        BEGIN
+            MENUITEM "Eject Disc",                  ID_OPTIONS_EJECTDISC
+            MENUITEM "Verify after burn",           ID_OPTIONS_VERIFY
+            MENUITEM "Joliet File System",          ID_OPTIONS_JOLIETFILESYSTEM
+            MENUITEM "Finalize",                    ID_OPTIONS_FINALIZE
+        END
+    END
+    POPUP "ASPI/SPTI"
+    BEGIN
+        POPUP "Interface"
+        BEGIN
+            MENUITEM "ASPI - Adaptec",              ID_INTERFACE_ASPI
+            MENUITEM "SPTI - Microsoft",            ID_INTERFACE_SPTI
+            MENUITEM "FrogAspi - www.frogaspi.com", ID_INTERFACE_FROGASPI
+        END
+        MENUITEM "Burn Devices Only",           ID_ASPI_BURNDEVICESONLY
+        MENUITEM "Disable ImageWriter",         ID_ASPI_DISABLEIMAGEWIRTER
+    END
+    POPUP "Info"
+    BEGIN
+        MENUITEM "Website",                     ID_INFO_WEBSITE
+        MENUITEM "About",                       ID_INFO_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_MODE_AUDIO          "Audio"
+    IDS_MODE_1              "Mode1"
+    IDS_MODE_2_FORMLESS     "Mode2 Formless"
+    IDS_MODE_2_FORM_1       "Mode2 Form1"
+    IDS_MODE_2_FORM_2       "Mode2 Form2"
+    IDS_MODE_CDG            "CDG"
+    IDS_MODE_UNKNOWN        "Unknown"
+    IDS_BS_RDT_SYNC_HEADER  "BS_RDT_SYNC_HEADER"
+    IDS_BS_RDT_SUBHEADERS   "BS_RDT_SUBHEADERS"
+    IDS_BS_RDT_DATA         "BS_RDT_DATA"
+    IDS_BS_RDT_EDC_ECC      "BS_RDT_EDC_ECC"
+    IDS_BS_RDT_SUBCH_PQ     "BS_RDT_SUBCH_PQ"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BS_RDT_SUBCH_PW     "BS_RDT_SUBCH_PW"
+    IDS_BS_RDT_SUBCH_RW     "BS_RDT_SUBCH_RW"
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#include "res\RawMFC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,5 @@
+set(SOURCE_FILES tchar.h)
+
+set(BUILD_FILES CMakeLists.txt)
+
+install(FILES ${SOURCE_FILES} ${BUILD_FILES} DESTINATION ${BASE_SAMPLES_DIR}/CPP/Common/winhdrs COMPONENT IsoSDK)

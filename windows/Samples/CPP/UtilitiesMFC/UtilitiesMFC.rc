@@ -1,0 +1,616 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russisch (Russische Föderation) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\..\\res\\isosdk.ico"
+
+IDI_REFRESH             ICON                    "..\\..\\res\\refresh2.ico"
+
+IDI_EJECT               ICON                    "..\\..\\res\\cd_eject.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DRIVEINFOEX DIALOGEX 0, 0, 316, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROPERTIESEX,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,302,204
+END
+
+IDD_CHANGEREGION DIALOGEX 0, 0, 186, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Region Code"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,108,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,108,50,14
+    CONTROL         "1. USA, Canada",IDC_REGION1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,7,104,11
+    CONTROL         "2. West Europe, Japan, South Africa",IDC_REGION2,"Button",BS_AUTORADIOBUTTON,7,22,138,11
+    CONTROL         "3. South East Asia",IDC_REGION3,"Button",BS_AUTORADIOBUTTON,7,37,138,11
+    CONTROL         "4. Australia, Spanish America",IDC_REGION4,"Button",BS_AUTORADIOBUTTON,7,52,138,11
+    CONTROL         "5. Russia, East Europe, Africa",IDC_REGION5,"Button",BS_AUTORADIOBUTTON,7,67,138,11
+    CONTROL         "6. China",IDC_REGION6,"Button",BS_AUTORADIOBUTTON,7,82,138,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DRIVEINFOEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_CHANGEREGION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russisch (Russische Föderation) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CAPABILITIES DIALOGEX 0, 0, 419, 336
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Info",IDC_STATIC,7,28,405,294
+    LTEXT           "If you didn't get the expected drive data it is possible that your drive didn't support the commands we send to the drive. Most time a Firmware update helps to fix this problem.",IDC_STATIC,7,7,405,23
+    CHECKBOX        "Read CD-R",IDC_CAP1,12,40,51,10
+    CHECKBOX        "Read CD-RW",IDC_CAP2,12,52,58,10
+    CHECKBOX        "Read DVD-ROM",IDC_CAP3,12,76,66,10
+    CHECKBOX        "Read DVD-R",IDC_CAP4,12,88,55,10
+    CHECKBOX        "Read DVD-RW",IDC_CAP5,12,100,62,10
+    CHECKBOX        "Read DVD-RAM",IDC_CAP6,12,112,65,10
+    CHECKBOX        "Read DVD+R",IDC_CAP7,12,136,58,10
+    CHECKBOX        "Read DVD+RW",IDC_CAP8,12,148,65,10
+    CHECKBOX        "Read DVD-R DL",IDC_CAP9,12,124,65,10
+    CHECKBOX        "Read DVD-MRDL",IDC_CAP10,114,52,69,10
+    CHECKBOX        "Read BD-R",IDC_CAP11,114,76,51,10
+    CHECKBOX        "Read BD-RE",IDC_CAP12,114,88,55,10
+    CHECKBOX        "Read BD-ROM",IDC_CAP13,114,64,61,10
+    CHECKBOX        "Read HD DVD-R",IDC_CAP14,114,136,67,10
+    CHECKBOX        "Read HD DVD-RW",IDC_CAP15,114,148,73,10
+    CHECKBOX        "Read HD DVD-ROM",IDC_CAP16,114,124,77,10
+    CHECKBOX        "Read DVD+R DL",IDC_CAP18,12,160,68,10
+    CHECKBOX        "Read DVD+RW DL",IDC_CAP19,114,40,75,10
+    CHECKBOX        "Read Mount Rainer",IDC_CAP20,114,160,77,10
+    CHECKBOX        "Read CD-RW CAV",IDC_CAP21,12,64,73,10
+    CHECKBOX        "Write CD-R",IDC_CAP22,216,40,52,10
+    CHECKBOX        "Write CD-RW",IDC_CAP23,216,52,59,10
+    CHECKBOX        "Write DVD-R",IDC_CAP24,216,76,56,10
+    CHECKBOX        "Write DVD-RW",IDC_CAP25,216,88,63,10
+    CHECKBOX        "Write DVD-RAM",IDC_CAP26,216,100,66,10
+    CHECKBOX        "Write DVD+R",IDC_CAP27,216,124,59,10
+    CHECKBOX        "Write DVD+RW",IDC_CAP28,216,136,65,10
+    CHECKBOX        "Write DVD-R DL",IDC_CAP29,216,112,66,10
+    CHECKBOX        "Write DVD-MRDL",IDC_CAP30,318,40,69,10
+    CHECKBOX        "Write BD-R",IDC_CAP31,318,52,51,10
+    CHECKBOX        "Write BD-RE",IDC_CAP32,318,64,55,10
+    CHECKBOX        "Write HD DVD-R",IDC_CAP33,318,100,67,10
+    CHECKBOX        "Write HD DVD-RW",IDC_CAP34,318,112,74,10
+    CHECKBOX        "Write DVD+R DL",IDC_CAP37,216,148,69,10
+    CHECKBOX        "Write DVD+RW DL",IDC_CAP38,216,160,75,10
+    CHECKBOX        "Write Mount Rainer",IDC_CAP39,318,124,78,10
+    CHECKBOX        "Write CD-RW CAV",IDC_CAP40,216,64,74,10
+    CHECKBOX        "Can simulate write",IDC_CAP41,12,184,75,10
+    CHECKBOX        "CPRM Auth",IDC_CAP42,12,196,52,10
+    CHECKBOX        "Multisession",IDC_CAP43,114,184,54,10
+    CHECKBOX        "Streaming",IDC_CAP44,114,196,48,10
+    CHECKBOX        "S.M.A.R.T.",IDC_CAP45,216,184,52,10
+    CHECKBOX        "Buffer Underrun Protection",IDC_CAP46,216,196,103,10
+    CHECKBOX        "Defect Management",IDC_CAP47,318,184,81,10
+    CHECKBOX        "Layer Jump Recording",IDC_CAP48,318,196,87,10
+    CHECKBOX        "Analog audio playback",IDC_CAP49,12,208,95,10
+    CHECKBOX        "Composite audio/video",IDC_CAP50,12,220,95,10
+    CHECKBOX        "Digital port 1",IDC_CAP51,12,232,95,10
+    CHECKBOX        "Digital port 2",IDC_CAP52,12,244,95,10
+    CHECKBOX        "Mode 2 Form 1 Read",IDC_CAP53,12,256,95,10
+    CHECKBOX        "Mode 2 Form 2 Read",IDC_CAP54,12,268,95,10
+    CHECKBOX        "CDDA Commands",IDC_CAP55,12,280,95,10
+    CHECKBOX        "CDDA Accurate Stream",IDC_CAP56,12,292,95,10
+    CHECKBOX        "R-W SC read",IDC_CAP57,114,208,95,10
+    CHECKBOX        "R-W SC deint.",IDC_CAP58,114,220,95,10
+    CHECKBOX        "C2 Pointers",IDC_CAP59,114,232,95,10
+    CHECKBOX        "ISRC Read",IDC_CAP60,114,244,95,10
+    CHECKBOX        "UPC Read",IDC_CAP61,114,256,95,10
+    CHECKBOX        "Barcode Read",IDC_CAP62,114,268,95,10
+    CHECKBOX        "Locking media",IDC_CAP63,114,280,95,10
+    CHECKBOX        "Lock state",IDC_CAP64,114,292,95,10
+    CHECKBOX        "Prevent lock jumper",IDC_CAP65,216,208,95,10
+    CHECKBOX        "Eject support",IDC_CAP66,216,220,95,10
+    CHECKBOX        "Sep. volume levels",IDC_CAP67,216,232,95,10
+    CHECKBOX        "Sep. channel mute",IDC_CAP68,216,244,95,10
+    CHECKBOX        "Disc present",IDC_CAP69,216,256,95,10
+    CHECKBOX        "SW Slot Selection",IDC_CAP70,216,268,95,10
+    CHECKBOX        "Side change",IDC_CAP71,216,280,95,10
+    CHECKBOX        "R-W SC in LI Read",IDC_CAP72,216,292,95,10
+    CHECKBOX        "Method 2 FP Read",IDC_CAP73,318,208,95,10
+    CHECKBOX        "CD-Text Read",IDC_CAP74,318,220,95,10
+    CHECKBOX        "CD-Text Write",IDC_CAP75,318,232,95,10
+    CHECKBOX        "DAO Raw",IDC_CAP76,318,244,95,10
+    CHECKBOX        "DAO 16",IDC_CAP77,318,256,95,10
+    CHECKBOX        "DAO 96 Pack",IDC_CAP78,318,268,95,10
+    CHECKBOX        "DAO 96 Raw",IDC_CAP79,318,280,95,10
+    CHECKBOX        "Packet Write",IDC_CAP80,318,292,95,10
+    CHECKBOX        "LabelFlash",IDC_CAP_LABELFLASH,12,305,84,10
+    CHECKBOX        "LightScribe",IDC_CAP_LIGHTSCRIBE,114,305,51,10
+    CHECKBOX        "Read BD-R XL",IDC_READ_BD_R_XL,114,100,60,10
+    CHECKBOX        "Read BD-RE XL",IDC_READ_BD_RE_XL,114,112,64,10
+    CHECKBOX        "Write BD-R XL",IDC_WRITE_BD_R_XL,318,76,61,10
+    CHECKBOX        "Write BD-RE XL",IDC_WRITE_BD_RE_XL,318,88,65,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CAPABILITIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        VERTGUIDE, 12
+        VERTGUIDE, 114
+        VERTGUIDE, 216
+        VERTGUIDE, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 329
+        HORZGUIDE, 40
+        HORZGUIDE, 52
+        HORZGUIDE, 64
+        HORZGUIDE, 76
+        HORZGUIDE, 88
+        HORZGUIDE, 100
+        HORZGUIDE, 112
+        HORZGUIDE, 124
+        HORZGUIDE, 136
+        HORZGUIDE, 148
+        HORZGUIDE, 160
+        HORZGUIDE, 184
+        HORZGUIDE, 196
+        HORZGUIDE, 305
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_UTILITIESMFC DIALOGEX 0, 0, 439, 378
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+MENU IDR_UTILITIESMFC
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_DEVICES,58,4,232,64,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Devices:",IDC_STATIC,7,4,41,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_TABS,"SysTabControl32",0x0,7,22,425,345
+END
+
+IDD_DRIVEINFO DIALOGEX 0, 0, 219, 83
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Disk type:",IDC_STATIC,62,12,35,8
+    LTEXT           "Max. burning speed:",IDC_STATIC,30,25,67,8
+    LTEXT           "Max. read speed:",IDC_STATIC,36,38,60,8
+    LTEXT           "Buffer underrun protection:",IDC_STATIC,10,51,86,8
+    LTEXT           "Test write:",IDC_STATIC,60,64,36,8
+    LTEXT           "...",IDC_DISKTYPE,106,12,71,8
+    LTEXT           "...",IDC_MAXBURNSPEED,106,25,74,8
+    LTEXT           "...",IDC_MAXREADSPEED,106,38,74,8
+    LTEXT           "...",IDC_PROTECTION,106,51,74,8
+    LTEXT           "...",IDC_TESTWRITE,106,64,74,8
+END
+
+IDD_MEDIUMINFO DIALOGEX 0, 0, 398, 207
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Medium:",IDC_STATIC,7,8,28,8
+    LTEXT           "Status:",IDC_STATIC,7,21,23,8
+    LTEXT           "Last:",IDC_STATIC,7,35,16,8
+    LTEXT           "Size:",IDC_STATIC,122,8,16,8
+    LTEXT           "Used space:",IDC_STATIC,122,21,42,8
+    LTEXT           "Free space:",IDC_STATIC,122,35,40,8
+    LTEXT           "...",IDC_MEDIUM,55,8,57,8
+    LTEXT           "...",IDC_STATUS,55,21,57,8
+    LTEXT           "...",IDC_LASTSESSION,55,35,57,8
+    LTEXT           "...",IDC_SIZE1,186,7,60,8
+    LTEXT           "...",IDC_USEDSPACE,186,21,60,8
+    LTEXT           "...",IDC_FREESPACE,186,35,60,8
+    PUSHBUTTON      "Terminate last session",IDC_BTN_TERMINATE,7,79,151,15
+    CONTROL         "List1",IDC_SESSIONS,"SysTreeView32",TVS_HASBUTTONS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,97,384,72
+    DEFPUSHBUTTON   "Refresh",IDC_BTN_REFRESH,7,183,57,17
+    DEFPUSHBUTTON   "Eject",IDC_BTN_EJECT,65,183,57,17
+    LTEXT           "Sessions:",IDC_STATIC,7,48,31,8
+    LTEXT           "Tracks:",IDC_STATIC,7,62,25,8
+    LTEXT           "UPC/EAN code:",IDC_STATIC,122,48,54,8
+    LTEXT           "...",IDC_NUMSESSIONS,55,48,23,8
+    LTEXT           "...",IDC_NUMTRACKS,55,62,27,8
+    LTEXT           "...",IDC_CATALOGNUMBER,186,48,60,8
+    LTEXT           "Vendor ID:",IDC_STATIC,122,62,64,8
+    LTEXT           "...",IDC_VENDORID,186,62,72,8
+    LTEXT           "Maximum write speed:",IDC_STATIC,258,7,78,8
+    LTEXT           "...",IDC_MAXWRITESPEED,336,7,55,8
+END
+
+IDD_IMAGECREATION DIALOGEX 0, 0, 409, 263
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Read errors correction settings",IDC_READERRORS_GROUP,25,30,243,116
+    CONTROL         "Read errors correction enabled",IDC_CHECK_READ_CORRECTION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,43,117,10
+    LTEXT           "Hardware retries count",IDC_STATIC,54,60,78,8
+    COMBOBOX        IDC_COMBO_IMAGE_FORMAT,285,43,53,43,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Execute",IDC_BUTTON_IMAGE_CREATE,276,169,62,14
+    GROUPBOX        "Process information",IDC_STATIC,25,192,321,64
+    CONTROL         "",IDC_PROGRESS_IMAGECREATE,"msctls_progress32",WS_BORDER,37,202,301,14
+    LTEXT           "Total sectors:",IDC_STATIC_TOTAL_SECTORS,37,221,100,8
+    LTEXT           "Read errors:",IDC_STATIC_READ_ERRORS,145,221,100,8
+    LTEXT           "Current sector:",IDC_STATIC_CURRENT_SECTORS,37,231,100,8
+    LTEXT           "Percentage:",IDC_STATIC_PERCENTAGE,145,231,100,8
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL_IMAGE,276,237,62,14
+    PUSHBUTTON      "Check formats",IDC_BUTTON_IMAGE_CHECK,285,59,53,14
+    EDITTEXT        IDC_EDIT_DESTINATION,25,7,243,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BUTTON_IMAGE_BROWSE,276,7,62,14
+    CONTROL         "Bad sectors list",IDC_CHECK_BADSECTORS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,114,67,10
+    LTEXT           "Path :",IDC_STATIC,56,129,20,8
+    EDITTEXT        IDC_EDIT_BADSECTORSPATH,80,125,180,14,ES_AUTOHSCROLL
+    LTEXT           "Software retries count",IDC_STATIC,54,76,76,8
+    EDITTEXT        IDC_EDIT_SRETRIES,145,76,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,181,76,11,14
+    EDITTEXT        IDC_EDIT_HRETRIES,145,58,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,181,58,11,14
+    CONTROL         "Create disc image",IDC_CHECK_CREATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,161,75,10
+    CONTROL         "Verify disc image",IDC_CHECK_VERIFY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,174,72,10
+    CONTROL         "Blank bad sectors",IDC_CHECK_BLANKBAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,98,73,10
+    GROUPBOX        "Job settings",IDC_STATIC,25,149,321,40
+    LTEXT           "Verify sectors:",IDC_STATIC_VERIFY_SECTORS,37,242,100,8
+    LTEXT           "Job state:",IDC_STATIC_STATE,145,242,100,8
+    GROUPBOX        "Formats",IDC_STATIC,276,30,70,64
+END
+
+IDD_DISCCOPY DIALOGEX 0, 0, 366, 255
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Copy",IDC_DISCCOPY_COPY,235,142,104,14
+    COMBOBOX        IDC_DISCCOPY_SOURCEDEVICE,104,14,235,74,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Source device :",IDC_STATIC,30,17,51,8
+    GROUPBOX        "Read error correction settings",IDC_STATIC,30,40,197,70
+    CONTROL         "Read errors correction enabled",IDC_CHECK_READ_CORRECTION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,55,117,10
+    LTEXT           "Hardware retries count",IDC_STATIC,55,70,78,8
+    LTEXT           "Software retries count",IDC_STATIC,55,85,76,8
+    EDITTEXT        IDC_EDIT_SRETRIES,137,82,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_S,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,175,81,11,14
+    EDITTEXT        IDC_EDIT_HRETRIES,137,65,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_H,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,175,64,11,14
+    CONTROL         "Verify after burn",IDC_CHECK_VERIFYAFTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,135,70,10
+    LTEXT           "Write:",IDC_STATIC,245,55,31,8
+    COMBOBOX        IDC_DISCCOPY_WRITEMETHOD,281,53,55,38,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Read:",IDC_STATIC,245,70,27,8
+    COMBOBOX        IDC_DISCCOPY_READMODE,281,68,55,63,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Process information",IDC_STATIC,37,162,310,84
+    CONTROL         "",IDC_DISCCOPY_PROGRESS,"msctls_progress32",WS_BORDER,42,185,294,14
+    LTEXT           "Total bytes:",IDC_STATIC_TOTAL_SECTORS,42,203,95,8
+    LTEXT           "Bytes writen:",IDC_STATIC_CURRENT_SECTORS,42,213,100,8
+    LTEXT           "Percentage:",IDC_STATIC_PERCENTAGE,162,203,81,8
+    PUSHBUTTON      "Abort",IDC_DISCCOPY_CANCEL,235,228,104,14
+    CONTROL         "Eject after burn",IDC_CHECK_EJECTAFTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,146,67,10
+    GROUPBOX        "Job information",IDC_STATIC,30,112,317,48
+    LTEXT           "Job state:",IDC_STATIC_STATUS,42,223,171,8
+    LTEXT           "Verify sectors:",IDC_STATIC_VERIFYSTATUS,42,233,171,8
+    CONTROL         "Autoerase before copy",IDC_CHECK_AUTOERASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,124,90,10
+    CTEXT           "Statisch",IDC_STATUS_INFO,42,173,294,8
+    GROUPBOX        "Read && write formats",IDC_STATIC,235,40,112,70
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_UTILITIESMFC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 432
+        BOTTOMMARGIN, 367
+    END
+
+    IDD_DRIVEINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_MEDIUMINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        VERTGUIDE, 122
+        VERTGUIDE, 186
+        VERTGUIDE, 246
+        VERTGUIDE, 258
+        VERTGUIDE, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+        HORZGUIDE, 21
+        HORZGUIDE, 35
+        HORZGUIDE, 48
+        HORZGUIDE, 62
+    END
+
+    IDD_IMAGECREATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 402
+        VERTGUIDE, 25
+        VERTGUIDE, 37
+        VERTGUIDE, 145
+        VERTGUIDE, 260
+        VERTGUIDE, 268
+        VERTGUIDE, 276
+        VERTGUIDE, 338
+        VERTGUIDE, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+        HORZGUIDE, 30
+        HORZGUIDE, 94
+        HORZGUIDE, 145
+        HORZGUIDE, 149
+        HORZGUIDE, 161
+    END
+
+    IDD_DISCCOPY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        VERTGUIDE, 30
+        VERTGUIDE, 37
+        VERTGUIDE, 42
+        VERTGUIDE, 137
+        VERTGUIDE, 213
+        VERTGUIDE, 235
+        VERTGUIDE, 245
+        VERTGUIDE, 336
+        VERTGUIDE, 339
+        VERTGUIDE, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+        HORZGUIDE, 40
+        HORZGUIDE, 165
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_UTILITIESMFC MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Write log file",              ID_FILE_WRITELOGFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Devices"
+    BEGIN
+        MENUITEM "Is drive ready",              ID_DEVICES_ISDRIVEREADY
+        MENUITEM "Eject tray",                  ID_DEVICES_EJECTTRAY
+        MENUITEM "Close tray",                  ID_DEVICES_CLOSETRAY
+        MENUITEM "Lock device",                 ID_DEVICES_LOCKDEVICE
+        MENUITEM "Unlock device",               ID_DEVICES_UNLOCKDEVICE
+        MENUITEM SEPARATOR
+        MENUITEM "Get drive info",              ID_DEVICES_GETDRIVEINFOS
+        MENUITEM "Get drive info extended",     ID_DEVICES_GETDRIVEINFOEX
+        MENUITEM "Get capabilities",            ID_DEVICES_GETCAPABILITIES
+        MENUITEM "Set region code",             ID_DEVICES_SETREGIONCODE
+    END
+    POPUP "Media"
+    BEGIN
+        MENUITEM "Get disk info",               ID_MEDIA_GETDISKINFO
+        MENUITEM "Erase",                       ID_MEDIA_ERASE
+    END
+    POPUP "Images"
+    BEGIN
+        MENUITEM "Mount image",                 ID_IMAGES_MOUNTIMAGE
+        MENUITEM "Unmount image",               ID_IMAGES_UNMOUNTIMAGE
+    END
+    POPUP "ASPI / SPTI"
+    BEGIN
+        POPUP "Interface"
+        BEGIN
+            MENUITEM "Internal",                    ID_INTERFACE_INTERNAL
+            MENUITEM "Winaspi",                     ID_INTERFACE_WINASPI
+            MENUITEM "FrogAspi",                    ID_INTERFACE_FROGASPI
+        END
+        MENUITEM "Rescan devices",              ID_ASPI_RESCANDEVICES
+        MENUITEM "Burn devices only",           ID_ASPI_BURNDEVICESONLY
+        MENUITEM "Disable imagewirter",         ID_ASPI_DISABLEIMAGEWIRTER
+    END
+    POPUP "Information"
+    BEGIN
+        MENUITEM "About",                       ID_INFORMATION_ABOUT
+        MENUITEM "Web",                         ID_INFORMATION_WEB
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\UtilitiesMFC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_IMAGECREATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DISCCOPY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DRIVEINFO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MEDIUMINFO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_UTILITIESMFC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\UtilitiesMFC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

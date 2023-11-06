@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDataSample_2017", "..\Samples\CSharp\CSharpDataSample\CSharpDataSample_2019.csproj", "{2FE10FAE-52E1-4D17-AA72-69B3DAD34F29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpUtilitiesSample_2017", "..\Samples\CSharp\CSharpUtilitiesSample\CSharpUtilitiesSample_2019.csproj", "{D9CA02EC-F5C1-41A2-86AD-988165B00637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpAudioSample_2017", "..\Samples\CSharp\CSharpAudioSample\CSharpAudioSample_2019.csproj", "{38FE5FB2-8A47-4341-9C95-E391EE4F215F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common_2017", "..\Samples\CSharp\Common\Common_2019.csproj", "{724F0BF0-0B74-434B-A7E3-E86246DBA8FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpRawSample_2017", "..\Samples\CSharp\CSharpRawSample\CSharpRawSample_2019.csproj", "{0834715F-084C-43C1-8BE3-80B18FAF70C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpImageEditSample_2017", "..\Samples\CSharp\CSharpImageEditSample\CSharpImageEditSample_2019.csproj", "{343D9C37-0BE4-4D9F-B1BB-2AD44F9498F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpVideoSample_2017", "..\Samples\CSharp\CSharpVideoSample\CSharpVideoSample_2019.csproj", "{345CF291-A5DD-42AD-8E96-AEF54C77F9AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FE10FAE-52E1-4D17-AA72-69B3DAD34F29}.Debug|x86.ActiveCfg = Debug|x86
+		{2FE10FAE-52E1-4D17-AA72-69B3DAD34F29}.Debug|x86.Build.0 = Debug|x86
+		{2FE10FAE-52E1-4D17-AA72-69B3DAD34F29}.Release|x86.ActiveCfg = Release|x86
+		{2FE10FAE-52E1-4D17-AA72-69B3DAD34F29}.Release|x86.Build.0 = Release|x86
+		{D9CA02EC-F5C1-41A2-86AD-988165B00637}.Debug|x86.ActiveCfg = Debug|x86
+		{D9CA02EC-F5C1-41A2-86AD-988165B00637}.Debug|x86.Build.0 = Debug|x86
+		{D9CA02EC-F5C1-41A2-86AD-988165B00637}.Release|x86.ActiveCfg = Release|x86
+		{D9CA02EC-F5C1-41A2-86AD-988165B00637}.Release|x86.Build.0 = Release|x86
+		{38FE5FB2-8A47-4341-9C95-E391EE4F215F}.Debug|x86.ActiveCfg = Debug|x86
+		{38FE5FB2-8A47-4341-9C95-E391EE4F215F}.Debug|x86.Build.0 = Debug|x86
+		{38FE5FB2-8A47-4341-9C95-E391EE4F215F}.Release|x86.ActiveCfg = Release|x86
+		{38FE5FB2-8A47-4341-9C95-E391EE4F215F}.Release|x86.Build.0 = Release|x86
+		{724F0BF0-0B74-434B-A7E3-E86246DBA8FB}.Debug|x86.ActiveCfg = Debug|x86
+		{724F0BF0-0B74-434B-A7E3-E86246DBA8FB}.Debug|x86.Build.0 = Debug|x86
+		{724F0BF0-0B74-434B-A7E3-E86246DBA8FB}.Release|x86.ActiveCfg = Release|x86
+		{724F0BF0-0B74-434B-A7E3-E86246DBA8FB}.Release|x86.Build.0 = Release|x86
+		{0834715F-084C-43C1-8BE3-80B18FAF70C7}.Debug|x86.ActiveCfg = Debug|x86
+		{0834715F-084C-43C1-8BE3-80B18FAF70C7}.Debug|x86.Build.0 = Debug|x86
+		{0834715F-084C-43C1-8BE3-80B18FAF70C7}.Release|x86.ActiveCfg = Release|x86
+		{0834715F-084C-43C1-8BE3-80B18FAF70C7}.Release|x86.Build.0 = Release|x86
+		{343D9C37-0BE4-4D9F-B1BB-2AD44F9498F6}.Debug|x86.ActiveCfg = Debug|x86
+		{343D9C37-0BE4-4D9F-B1BB-2AD44F9498F6}.Debug|x86.Build.0 = Debug|x86
+		{343D9C37-0BE4-4D9F-B1BB-2AD44F9498F6}.Release|x86.ActiveCfg = Release|x86
+		{343D9C37-0BE4-4D9F-B1BB-2AD44F9498F6}.Release|x86.Build.0 = Release|x86
+		{345CF291-A5DD-42AD-8E96-AEF54C77F9AC}.Debug|x86.ActiveCfg = Debug|x86
+		{345CF291-A5DD-42AD-8E96-AEF54C77F9AC}.Debug|x86.Build.0 = Debug|x86
+		{345CF291-A5DD-42AD-8E96-AEF54C77F9AC}.Release|x86.ActiveCfg = Release|x86
+		{345CF291-A5DD-42AD-8E96-AEF54C77F9AC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A10D5B82-50A4-4179-BA0B-E799290AB04E}
+	EndGlobalSection
+EndGlobal

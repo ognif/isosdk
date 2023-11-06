@@ -1,0 +1,1 @@
+reswrap.exe --header -o icons.h isosdksmall.ico --source --include icons.h -o icons.cpp isosdksmall.ico

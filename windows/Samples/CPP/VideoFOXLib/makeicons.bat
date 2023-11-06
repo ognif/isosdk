@@ -1,0 +1,2 @@
+set resources=..\..\res\minidoc.gif ..\..\res\addvideo.ico ..\..\res\delvideo.ico ..\..\res\reset.ico ..\..\res\cd_erase.ico ..\..\res\burn_iso.ico ..\..\res\cancel.ico ..\..\res\isosdkbig.ico ..\..\res\isosdksmall.ico ..\..\res\refresh2.ico
+reswrap.exe --header -o resources.h %resources% --source --include stdafx.h -o resources.cpp %resources%

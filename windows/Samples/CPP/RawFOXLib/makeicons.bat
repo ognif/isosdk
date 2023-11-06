@@ -1,0 +1,2 @@
+set resources=..\..\res\addfile.ico ..\..\res\addfolder.ico ..\..\res\selection.ico ..\..\res\reset.ico ..\..\res\cd_erase.ico ..\..\res\burn_iso.ico ..\..\res\cancel.ico ..\..\res\cd_eject.ico ..\..\res\cd_load.ico ..\..\res\refresh2.ico ..\..\res\isosdksmall.ico ..\..\res\isosdkbig.ico
+reswrap.exe --header -o resources.h %resources% --source --include stdafx.h -o resources.cpp %resources%

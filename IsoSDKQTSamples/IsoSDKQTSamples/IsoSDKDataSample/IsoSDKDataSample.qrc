@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/addfile.ico</file>
+        <file>images/burn_iso.ico</file>
+        <file>images/selection.ico</file>
+        <file>images/burn_32.png</file>
+        <file>images/deleteall.png</file>
+        <file>images/fileadd.png</file>
+        <file>images/isosdk.ico</file>
+        <file>images/folder_add32.png</file>
+    </qresource>
+</RCC>

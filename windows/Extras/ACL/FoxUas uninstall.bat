@@ -1,0 +1,2 @@
+FoxUas -stop
+FoxUas -remove

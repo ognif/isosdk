@@ -1,0 +1,42 @@
+To grab audio data from an AudioCD to compressed audio file you can use 
+the bass library (https://www.un4seen.com)
+
+bass = The basic bass library
+bassenc = The addon to burn mono or multichannel files to audio cd
+Encoders- Add this AddOns to the folder. The FoxBurner SDK will autodetect them.
+
+################################################################
+###### Encoding (Grab Audio CD) ################################
+################################################################
+
+## Windows ##
+- bass.dll (https://www.un4seen.com/download.php?bass24)
+- bassenc.dll (https://www.un4seen.com/download.php?bassenc24)
+## Windows Encoder ##
+- Flac (https://www.un4seen.com/download.php?bassenc_flac24) 
+- MP3 (https://www.un4seen.com/download.php?bassenc_mp324)
+- OGG (https://www.un4seen.com/download.php?bassenc_ogg24)
+- OPUS (https://www.un4seen.com/download.php?bassenc_opus24)
+- AAC ()
+
+################################################################
+
+## Linux ##
+- libbass.so (https://www.un4seen.com/download.php?bass24-linux)
+- libbassenc.so (https://www.un4seen.com/download.php?bassenc24-linux)
+## Linux Encoder ##
+- Flac (https://www.un4seen.com/download.php?bassenc_flac24-linux) 
+- MP3 (https://www.un4seen.com/download.php?bassenc_mp324-linux)
+- OGG (https://www.un4seen.com/download.php?bassenc_ogg24-linux)
+- OPUS (https://www.un4seen.com/download.php?bassenc_opus24-linux)
+
+################################################################
+
+## Mac ##
+- libbass.dylib (https://www.un4seen.com/download.php?bass24-osx)
+- libbassenc.dylib (https://www.un4seen.com/download.php?bassenc24-osx)
+## Mac ##
+- Flac (https://www.un4seen.com/download.php?bassenc_flac24-osx) 
+- MP3 (https://www.un4seen.com/download.php?bassenc_mp324-osx)
+- OGG (https://www.un4seen.com/download.php?bassenc_ogg24-osx)
+- OPUS (https://www.un4seen.com/download.php?bassenc_opus24-osx)

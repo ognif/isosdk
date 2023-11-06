@@ -1,0 +1,7 @@
+add_subdirectory(Common)
+add_subdirectory(CSharpAudioSample)
+add_subdirectory(CSharpDataSample)
+add_subdirectory(CSharpImageEditSample)
+add_subdirectory(CSharpRawSample)
+add_subdirectory(CSharpUtilitiesSample)
+add_subdirectory(CSharpVideoSample)

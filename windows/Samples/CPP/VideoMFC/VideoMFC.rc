@@ -1,0 +1,246 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russisch (Russische Föderation) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SCANDLG DIALOGEX 0, 0, 178, 57
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "Scanning Mpeg File...",IDC_STATIC,7,11,164,8
+    CONTROL         "Progress1",IDC_SCANPRG,"msctls_progress32",WS_BORDER,7,25,164,11
+    PUSHBUTTON      "Cancel",IDC_ABORTSCAN,59,39,53,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SCANDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russisch (Russische Föderation) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIDEOMFC_DIALOG DIALOGEX 0, 0, 421, 295
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+MENU IDR_VIDEOMFC
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TABS,"SysTabControl32",0x0,4,41,413,232
+    COMBOBOX        IDC_DEVICES,58,7,232,94,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Devices:",IDC_STATIC,7,7,41,12,SS_CENTERIMAGE
+    LTEXT           "Project Type:",IDC_STATIC,7,22,49,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_PROJECTTYPE,58,22,121,53,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_VIDEOFILELIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,58,397,210
+    CONTROL         "",IDC_PICTUREFILELIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,10,58,397,210
+    GROUPBOX        "Static",IDC_RULER,4,275,413,14
+END
+
+IDD_SAMPLE_BURN_DIALOG DIALOGEX 0, 0, 287, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "32% written to D: [DiskLabel]"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,230,157,50,14
+    LISTBOX         IDC_BURN_LOG,7,7,273,71,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Write File:",IDC_STATIC,7,80,33,10
+    LTEXT           "",IDC_CURRENT_FILE,45,80,154,10
+    LTEXT           "Current Speed:",IDC_CURRENT_SPEED,7,90,94,10
+    LTEXT           "Total Time:",IDC_TOTAL_TIME,201,80,79,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,101,271,1
+    LTEXT           "Current Buffer:",IDC_STATIC,7,104,93,9
+    LTEXT           "Total Progress:",IDC_STATIC,7,127,93,10
+    CONTROL         "",IDC_PROGRESS_BUFFER,"msctls_progress32",WS_BORDER,7,114,251,11
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,7,137,251,11
+    PUSHBUTTON      "Save Log",IDC_SAVE_LOG,7,157,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VIDEOMFC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\..\\res\\isosdk.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_VIDEOMFC MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Add Video File",              ID_FILE_ADDVIDEOFILE
+        MENUITEM "Add Picture File",            ID_FILE_ADDPICTUREFILE
+        MENUITEM "Delete selected",             ID_FILE_DELETEFILE
+        MENUITEM "Reset",                       ID_FILE_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "Write log file",              ID_FILE_WRITELOGFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Burn"
+    BEGIN
+        MENUITEM "Burn with custom dialog...",  ID_BURN_BURNWITHDEVELOPEDGUI
+        MENUITEM "Burn with IsoSDK Embedded Dialog", ID_BURN_BURNWITHFOXBURNEREMBEDDEDDIALOG
+        MENUITEM "Erase Disk",                  ID_BURN_ERASEDISK
+        MENUITEM SEPARATOR
+        POPUP "Options"
+        BEGIN
+            MENUITEM "Eject Disk",                  ID_OPTIONS_EJECTDISK
+            MENUITEM "Joliet File System",          ID_OPTIONS_JOLIETFILESYSTEM
+        END
+    END
+    POPUP "ASPI / SPTI"
+    BEGIN
+        POPUP "Interface"
+        BEGIN
+            MENUITEM "Internal",                    ID_INTERFACE_INTERNAL
+            MENUITEM "Winaspi",                     ID_INTERFACE_WINASPI
+            MENUITEM "FrogAspi",                    ID_INTERFACE_FROGASPI
+        END
+        MENUITEM "Rescan Devices",              ID_ASPI_RESCANDEVICES
+        MENUITEM "Burn Devices only",           ID_ASPI_BURNDEVICESONLY
+        MENUITEM "Disable Imagewirter",         ID_ASPI_DISABLEIMAGEWIRTER
+    END
+    POPUP "Information"
+    BEGIN
+        MENUITEM "About",                       ID_INFORMATION_ABOUT
+        MENUITEM "Web",                         ID_INFORMATION_WEB
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VideoMFC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\VideoMFC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

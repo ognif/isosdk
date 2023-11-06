@@ -1,0 +1,2 @@
+set resources=..\..\res\cancel.ico ..\..\res\cd_eject.ico ..\..\res\cd_info.ico ..\..\res\cd_load.ico ..\..\res\cd_erase.ico ..\..\res\drive_info.ico ..\..\res\drive_scan.ico ..\..\res\refresh2.ico ..\..\res\isosdkbig.ico ..\..\res\isosdksmall.ico
+reswrap.exe --header -o resources.h %resources% --source --include stdafx.h -o resources.cpp %resources%

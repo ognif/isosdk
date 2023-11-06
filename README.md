@@ -79,7 +79,7 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
 
 # Supported Operating Systems
   - Windows 11, Windows 10, Windows 8, Windows 7, Windows Vista, Windows XP, Windows Server
-  - macOS Tiger (10.4) up to Big Sur
+  - macOS Tiger (10.4) up to Sonoma
   - Linux Ubuntu, Suse, Debian, Gentoo, Cent OS, Broadcom/STB, and others
   - Android 4.2 and above
 

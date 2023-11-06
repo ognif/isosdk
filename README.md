@@ -9,7 +9,7 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
   - DVD-ROM, DVD-RW, DVD-R, DVD+RW, DVD+R, DVD-RAM
   - CD-ROM, CD-R, CD-RW
 
-# Device Interfaces
+# Supported Device Interfaces
   - EIDE
   - USB (C)
   - FireWire (IEEE-1394)
@@ -17,7 +17,7 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
   - SATA
   - e-SATA
 
-# Device Control 
+# Supported Device Controls
   - Device Enumeration
   - Device Capabilities
   - Device Cache Information
@@ -25,12 +25,12 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
   - Read / Write Speed Control
   - Media Information 
 
-# Blu-ray
+# Blu-ray Disc Features
   - BD-R Sequential Recording (BD-R – POW)
   - BD-R Pseudo-Overwrite (BD-R + POW)
   - BD-RE Random Recording
 
-# DVD 
+# DVD Disc Features
   - DVD-R Disc-At-Once
   - DVD-R Incremental
   - DVD-RW Sequential
@@ -38,7 +38,7 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
   - DVD+R Incremental
   - DVD+RW Incremental
 
-# CD
+# CD Disc Features
   - Track-At-Once (TAO)
   - Session-At-Once (SAO)
   - Packet Burning
@@ -48,7 +48,7 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
   - RAW Disc-At-Once + SUB channels.
   - RAW DAO with full PQ/R-W sub-channels and B0 pointer for multi-session
 
-# Data
+# Data Project Features
   - UDF CDFS (up to UDF 2.60)
   - ISO-9660 CDFS Level1, Level2, and unrestricted mode
   - Joliet CDFS
@@ -60,7 +60,7 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
   - Ripping to ISO image
   - Ripping to BIN/CUE image
 
-# Audio
+# Audio Project Features
   - Compact Disc Digital Audio (CD-DA)
   - CD-EXTRA / CD-PLUS. Audio and data on a single CD
   - CD-TEXT with ISRC, UPC/EAN, and Genre Information
@@ -70,14 +70,14 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
   - Raw audio + sub-channel ripping / burning
   - Bass Library support
 
-# Video 
+# Video Project Features
   - DVD Video from VIDEO_TS source
   - Blu-ray (AVCHD) Video from BDAV source
   - Blu-ray Video from the BDMV source
   - Video CD from Mpeg1 Video
   - Super Video CD from Mpeg2 Video
 
-# Operating Systems
+# Supported Operating Systems
   - Windows 11, Windows 10, Windows 8, Windows 7, Windows Vista, Windows XP, Windows Server
   - macOS Tiger (10.4) up to Big Sur
   - Linux Ubuntu, Suse, Debian, Gentoo, Cent OS, Broadcom/STB, and others

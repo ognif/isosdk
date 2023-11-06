@@ -84,7 +84,10 @@ IsoSDK is leading CD burning, DVD, Blu-ray, and recording development software. 
   - Android 4.2 and above
 
 The IsoSDK is currently not available as open source. If you are interested, please contact me.
+
+# Licensekey 
 For those who have downloaded the IsoSDK package from dubious websites and are using a cracked key, here is a set of official license keys for use with the IsoSDK.
+You can use the SDK for free, but I ask for a small donation if the SDK is used in a commercial project.
 
 | Windows | Linux | macOS |
 | :--- | :--- | :--- | 

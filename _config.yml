@@ -1,6 +1,4 @@
 theme: jekyll-theme-slate
 title: IsoSDK
 description: The New Home Of The IsoSDK Package
-
-use_download_button              : true  
-download_button_text             : "Download all OS" # The text that download buttons will contain
+show_downloads: true
